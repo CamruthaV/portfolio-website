@@ -97,8 +97,8 @@
         <div class="container">
           <h2>Resume</h2>
           <p>Download my latest resume to explore my experience in detail.</p>
-          <a class="button secondary" href="#" aria-label="Download resume"
-            >Download Resume</a
+          <a class="button secondary" href="./resume.html" aria-label="View resume"
+            >View Resume</a
           >
         </div>
       </section>
@@ -106,7 +106,12 @@
       <section id="contact" class="section alt-bg">
         <div class="container">
           <h2>Contact</h2>
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            action="mailto:portfolio@example.com"
+            method="post"
+            enctype="text/plain"
+          >
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
 
