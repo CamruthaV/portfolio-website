@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="#home">My Portfolio</a>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section hero">
+        <div class="container">
+          <p class="eyebrow">Welcome</p>
+          <h1>Hi, I'm a Developer</h1>
+          <p class="lead">
+            I build clean, practical, and user-friendly digital experiences.
+          </p>
+          <a class="button" href="#projects">View Projects</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I enjoy solving real-world problems through web development, with
+            focus on responsive design and simple user experiences.
+          </p>
+        </div>
+      </section>
+
+      <section id="certifications" class="section alt-bg">
+        <div class="container">
+          <h2>Certifications</h2>
+          <ul class="card-grid">
+            <li class="card">Frontend Development Certification</li>
+            <li class="card">Responsive Web Design Certification</li>
+            <li class="card">JavaScript Algorithms Certification</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Project One</h3>
+              <p>A clean landing page built with semantic HTML and CSS.</p>
+            </article>
+            <article class="card">
+              <h3>Project Two</h3>
+              <p>A responsive portfolio section with reusable card layout.</p>
+            </article>
+            <article class="card">
+              <h3>Project Three</h3>
+              <p>A contact-ready page structure optimized for readability.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blogs" class="section alt-bg">
+        <div class="container">
+          <h2>Blogs</h2>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Designing Better User Interfaces</h3>
+              <p>Tips for balancing aesthetics and usability.</p>
+            </article>
+            <article class="card">
+              <h3>Improving Frontend Performance</h3>
+              <p>Small optimizations that make sites feel faster.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section">
+        <div class="container">
+          <h2>Resume</h2>
+          <p>Download my latest resume to explore my experience in detail.</p>
+          <a class="button secondary" href="./resume.html" aria-label="View resume"
+            >View Resume</a
+          >
+        </div>
+      </section>
+
+      <section id="contact" class="section alt-bg">
+        <div class="container">
+          <h2>Contact</h2>
+          <form
+            class="contact-form"
+            action="mailto:portfolio@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button class="button" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
