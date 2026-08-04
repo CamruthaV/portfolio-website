@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 :root {
   --bg: #f5f7fb;
   --surface: #ffffff;
@@ -7,6 +9,16 @@
   --primary-dark: #312e81;
   --border: #e5e7eb;
   --header-height: 80px;
+
+  /* ==========================
+   Typography
+========================== */
+
+--font-heading: "Merriweather", serif;
+--font-display: "Space Grotesk", sans-serif;
+--font-body: "Manrope", sans-serif;
+--font-code: "JetBrains Mono", monospace;
+--font-accent: "Felipa", cursive;
 }
 
 * {
@@ -19,7 +31,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-body);
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
@@ -78,6 +90,14 @@ body {
 }
 
 /* ==========================
+   CODE BLOCKS
+========================== */
+code,
+pre {
+  font-family: var(--font-code);
+}
+
+/* ==========================
    SECTION LAYOUT
 ========================== */
 
@@ -112,7 +132,12 @@ h3 {
   line-height: 1.2;
 }
 
+h2 {
+  font-family: var(--font-heading);
+}
+
 h1 {
+  font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1rem;
 }
@@ -150,6 +175,11 @@ h2 {
   border-radius: 0.8rem;
   padding: 1rem;
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+}
+
+.card h3,
+.card h4 {
+  font-family: var(--font-display);
 }
 
 /* ==========================
