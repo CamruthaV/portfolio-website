@@ -14,11 +14,11 @@
    Typography
 ========================== */
 
---font-heading: "Merriweather", serif;
---font-display: "Space Grotesk", sans-serif;
---font-body: "Manrope", sans-serif;
---font-code: "JetBrains Mono", monospace;
---font-accent: "Felipa", cursive;
+  --font-heading: "Merriweather", serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+  --font-accent: "Felipa", cursive;
 }
 
 * {
@@ -345,13 +345,13 @@ h2 {
 }
 
 .blog-image {
-    width: 100%;
-    height: 180px;
+  width: 100%;
+  height: 180px;
 
-    object-fit: cover;
-    object-position: center;
+  object-fit: cover;
+  object-position: center;
 
-    display: block;
+  display: block;
 }
 
 .blog-card:hover .blog-image {
@@ -401,9 +401,9 @@ h2 {
 }
 
 .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .blog-content .button {
@@ -502,9 +502,10 @@ h2 {
 ========================== */
 
 @media (max-width: 768px) {
-  :root{
+  :root {
     --header-height: 120px;
   }
+
   .about-grid {
     grid-template-columns: 1fr;
   }
@@ -564,24 +565,34 @@ h2 {
   }
 }
 
-@media (max_width:768px) {
   /* ==========================
    BLOGS (Mobile)
 ========================== */
+@media (max-width: 768px) {
 
-.blog-grid {
+  .blog-grid {
     grid-template-columns: 1fr;
-}
+    gap: 1.5rem;
+  }
 
-.blog-image {
+  .blog-title {
+    font-size: 1.6rem;
+  }
+
+  .blog-content {
+    padding: 1.5rem;
+  }
+
+  .blog-description {
+    max-width: 100%;
+  }
+
+  .blog-image {
     height: 180px;
-}
+  }
 
-.blog-content {
-    padding: 1.25rem;
-}
-
-.blog-title {
-    font-size: 1.5rem;
-}
+  .blog-content .button {
+    width: 100%;
+    text-align: center;
+  }
 }
