@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Felipa&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css');
+
 :root {
   --bg: #f5f7fb;
   --surface: #ffffff;
@@ -194,7 +196,26 @@ h2 {
 }
 
 .about-grid .card {
-  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card-icon {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 8rem;
+    opacity: 0.15;
+
+    pointer-events: none;
+}
+
+.about-grid .card h3,
+.about-grid .card p {
+    position: relative;
+    z-index: 1;
 }
 
 /* ==========================
@@ -565,7 +586,7 @@ h2 {
   }
 }
 
-  /* ==========================
+/* ==========================
    BLOGS (Mobile)
 ========================== */
 @media (max-width: 768px) {
