@@ -63,9 +63,18 @@ body {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
   color: var(--text);
   text-decoration: none;
   font-weight: 700;
+}
+
+.brand img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .nav-list {
