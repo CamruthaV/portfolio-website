@@ -40,12 +40,12 @@ body {
   line-height: 1.6;
 }
 
-/* .container {
+.container {
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
   padding-inline: 2.5rem;
-} */
+}
 
 /* ==========================
    NAVBAR
@@ -135,7 +135,7 @@ pre {
 
 .section {
   min-height: calc(100vh - var(--header-height));
-  /* padding-block: 4rem; */
+  padding-block: 4rem;
   scroll-margin-top: var(--header-height);
 }
 
@@ -258,7 +258,7 @@ h2 {
 
 .cert-grid {
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   justify-content: center;
 }
