@@ -139,7 +139,7 @@ pre {
 
 .section {
   min-height: calc(100vh - var(--header-height));
-  padding-block: 4rem;
+  padding-block: 2.5rem;
   scroll-margin-top: var(--header-height);
 }
 
@@ -373,6 +373,184 @@ h2 {
   max-width: 60ch;
   color: var(--muted);
 }
+
+/* ==========================
+   PROJECTS
+========================== */
+
+/* .projects-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-item {
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.project-summary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 1.75rem;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.project-summary:hover {
+  background: #f8fafc;
+}
+
+.project-summary:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+
+.project-summary-content {
+  min-width: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-type,
+.project-status,
+.project-detail-label,
+.planned-project-status {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-type {
+  color: var(--muted);
+}
+
+.project-status {
+  color: var(--primary);
+}
+
+.project-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.project-focus {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.project-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  color: var(--text);
+}
+
+.project-toggle i {
+  font-size: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.project-summary[aria-expanded="true"] .project-toggle i {
+  transform: rotate(180deg);
+}
+
+.project-details {
+  border-top: 1px solid var(--border);
+}
+
+.project-details-content {
+  max-width: 850px;
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.project-details-content > p:first-child {
+  margin-top: 0;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.project-detail-group {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 1rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-detail-label {
+  color: var(--muted);
+}
+
+.project-detail-value {
+  line-height: 1.6;
+}
+
+.project-details-content .button {
+  margin-top: 1.5rem;
+} */
+
+
+/* ==========================
+   PLANNED PROJECTS
+========================== */
+
+/* .projects-planned {
+  margin-top: 3rem;
+}
+
+.planned-projects {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.planned-project {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: #f8fafc;
+  color: var(--muted);
+}
+
+.planned-project-status {
+  color: var(--muted);
+}
+
+.planned-project-name {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.planned-project-focus {
+  font-size: 0.9rem;
+} */
 
 /* ==========================
    BLOGS
@@ -895,6 +1073,7 @@ h2 {
   .cert-grid,
   .overlay-grid,
   .card-grid,
+  .projects-grid,
   .resume-grid,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -918,6 +1097,38 @@ h2 {
   }
 }
 
+/* ==========================
+   PROJECTS — MOBILE
+========================== */
+
+/* .project-summary {
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-toggle {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .project-details-content {
+    padding: 1.25rem;
+  }
+
+  .project-detail-group {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .planned-project {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding: 1rem 1.1rem;
+  } */
 
 /* ==========================
    BLOGS (Mobile)

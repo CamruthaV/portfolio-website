@@ -1,3 +1,4 @@
+// Navigation Toggle Functionality
 const navToggle = document.querySelector(".nav-toggle");
 const primaryNav = document.querySelector("#primary-navigation");
 
@@ -31,3 +32,21 @@ primaryNav.querySelectorAll("a").forEach((link) => {
     }, 150);
   });
 });
+
+/* ==========================
+   PROJECT ACCORDIONS
+========================== */
+
+// const projectSummaries = document.querySelectorAll(".project-summary");
+
+// projectSummaries.forEach((summary) => {
+//   summary.addEventListener("click", () => {
+//     const detailsId = summary.getAttribute("aria-controls");
+//     const details = document.getElementById(detailsId);
+
+//     const isExpanded = summary.getAttribute("aria-expanded") === "true";
+
+//     summary.setAttribute("aria-expanded", String(!isExpanded));
+//     details.hidden = isExpanded;
+//   });
+// });

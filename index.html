@@ -19,7 +19,7 @@
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
-        aria-controls="primary-navigation" >
+        aria-controls="primary-navigation">
         <i class="ti ti-menu-2" aria-hidden="true"></i>
       </button>
 
@@ -128,8 +128,6 @@
       <div class="container">
         <h2>Professional Certifications</h2>
 
-        <!-- <h3>Completed</h3> -->
-
         <div class="cert-grid">
 
           <article class="card cert-card">
@@ -137,8 +135,7 @@
 
             <h4>ISC2 Certified in Cybersecurity (CC)</h4>
             <p class="cert-date">January 2025</p>
-            <p class="cert-desc">Cybersecurity Principles & Operations</p>
-
+            
             <a href="https://www.credly.com/badges/a385d3ff-5351-4ace-b91b-5e8591c43ac7/public_url" target="_blank"
               rel="noopener noreferrer" class="button">
               Verify Credential
@@ -148,9 +145,9 @@
           <article class="card cert-card">
             <img src="./assets/certs/ai900-badge.png" alt="Microsoft AI-900 Badge" class="cert-badge" />
 
-            <h4>Azure AI Fundamentals (AI-900)</h4>
+            <h4>Microsoft AI Fundamentals</h4>
             <p class="cert-date">June 2025</p>
-            <p class="cert-desc">AI Fundamentals & Use cases</p>
+            
 
             <a href="https://learn.microsoft.com/api/credentials/share/en-us/CAmruthavalli-6219/495B4AFAEBC28E06?sharingId=B0887F1E86454AFF"
               target="_blank" rel="noopener noreferrer" class="button">
@@ -163,7 +160,7 @@
 
             <h4>GCP Associate Cloud Engineer</h4>
             <p class="cert-date">April 2026</p>
-            <p class="cert-desc">Cloud Infrastructure & Functions</p>
+           
 
             <a href="https://www.credly.com/badges/3febb264-aae6-4631-b517-753df4faa410/public_url" target="_blank"
               rel="noopener noreferrer" class="button">
@@ -174,10 +171,9 @@
           <article class="card cert-card">
             <img src="./assets/certs/sc-900 badge.png" alt="Microsoft SC-900 Badge" class="cert-badge" />
 
-            <h4>Microsoft Security Fundamentals (SC-900)</h4>
+            <h4>Microsoft Security Fundamentals</h4>
             <p class="cert-date">July 2026</p>
-            <p class="cert-desc">Security, Compliance, and Identity Fundamentals</p>
-
+            
             <a href="https://learn.microsoft.com/api/credentials/share/en-us/CAmruthavalli-6219/E0A2BDD611F7ADFB?sharingId=B0887F1E86454AFF"
               target="_blank" rel="noopener noreferrer" class="button">
               Verify Credential
@@ -216,76 +212,192 @@
     </section>
 
     <section id="projects" class="section">
-      <div class="container">
+      <!-- <div class="container">
+
         <h2>Projects</h2>
 
-        <div class="coming-soon">
+        <div class="projects-list"> -->
 
-          <div class="overlay-grid blurred-content">
+          <!-- Active project -->
+          <!-- <article class="project-item">
 
-            <article class="card">
-              <h3>GCP IAM Security Lab</h3>
-              <p>
-                Exploring identity and access management concepts in Google Cloud,
-                including roles, permissions, service accounts, and secure access
-                practices.
-              </p>
-            </article>
+            <button type="button" class="project-summary" aria-expanded="false"
+              aria-controls="project-details-infrastructure">
 
-            <article class="card">
-              <h3>Microsoft Entra ID Identity Lab</h3>
-              <p>
-                A future project exploring identity management, authentication,
-                authorization, and access control concepts using Microsoft Entra ID.
-              </p>
-            </article>
+              <span class="project-summary-content">
 
-            <article class="card">
-              <h3>GCP Monitoring & Observability Project</h3>
-              <p>
-                Building practical experience with cloud monitoring, logging,
-                alerting, and operational visibility in Google Cloud.
-              </p>
-            </article>
+                <span class="project-meta">
+                  <span class="project-type">CAPABILITY LAB</span>
+                  <span class="project-status">IN PROGRESS</span>
+                </span>
 
-            <article class="card">
-              <h3>GCP IAM Security Lab</h3>
-              <p>
-                Exploring identity and access management concepts in Google Cloud,
-                including roles, permissions, service accounts, and secure access
-                practices.
-              </p>
-            </article>
+                <span class="project-title">
+                  Infrastructure Foundations
+                </span>
 
-            <article class="card">
-              <h3>Microsoft Entra ID Identity Lab</h3>
-              <p>
-                A future project exploring identity management, authentication,
-                authorization, and access control concepts using Microsoft Entra ID.
-              </p>
-            </article>
+                <span class="project-focus">
+                  Infrastructure as Code
+                </span>
 
-            <article class="card">
-              <h3>GCP Monitoring & Observability Project</h3>
-              <p>
-                Building practical experience with cloud monitoring, logging,
-                alerting, and operational visibility in Google Cloud.
-              </p>
-            </article>
+              </span>
+
+              <span class="project-toggle" aria-hidden="true">
+                <i class="ti ti-chevron-down"></i>
+              </span>
+
+            </button>
+
+            <div id="project-details-infrastructure" class="project-details" hidden>
+              <div class="project-details-content">
+
+                <p>
+                  Building practical experience with Infrastructure as Code
+                  by provisioning and managing cloud infrastructure through
+                  Terraform, with a focus on reusable configuration,
+                  automation, and engineering fundamentals.
+                </p>
+
+                <div class="project-detail-group">
+                  <span class="project-detail-label">
+                    Demonstrated through
+                  </span>
+
+                  <span class="project-detail-value">
+                    Terraform · GCP · HCL
+                  </span>
+                </div>
+
+                <div class="project-detail-group">
+                  <span class="project-detail-label">
+                    Engineering concepts
+                  </span>
+
+                  <span class="project-detail-value">
+                    Resources · Variables · State · Modules
+                  </span>
+                </div>
+
+                <div class="project-detail-group">
+                  <span class="project-detail-label">
+                    Why it matters
+                  </span>
+
+                  <span class="project-detail-value">
+                    Repeatable, version-controlled infrastructure management.
+                  </span>
+                </div>
+
+                <a href="#" class="button" target="_blank" rel="noopener">
+                  GitHub
+                </a>
+
+              </div>
+            </div>
+
+          </article> -->
+
+
+          <!-- Second active project -->
+          <!-- <article class="project-item">
+
+            <button type="button" class="project-summary" aria-expanded="false" aria-controls="project-details-example">
+
+              <span class="project-summary-content">
+
+                <span class="project-meta">
+                  <span class="project-type">CAPABILITY LAB</span>
+                  <span class="project-status">PLANNED</span>
+                </span>
+
+                <span class="project-title">
+                  Example Project
+                </span>
+
+                <span class="project-focus">
+                  Cloud Security
+                </span>
+
+              </span>
+
+              <span class="project-toggle" aria-hidden="true">
+                <i class="ti ti-chevron-down"></i>
+              </span>
+
+            </button>
+
+            <div id="project-details-example" class="project-details" hidden>
+              <div class="project-details-content">
+
+                <p>
+                  Short description of what this project explores and
+                  what practical engineering capability it is intended
+                  to demonstrate.
+                </p>
+
+                <div class="project-detail-group">
+                  <span class="project-detail-label">
+                    Demonstrated through
+                  </span>
+
+                  <span class="project-detail-value">
+                    Azure · Entra ID · IAM
+                  </span>
+                </div>
+
+                <div class="project-detail-group">
+                  <span class="project-detail-label">
+                    Engineering concepts
+                  </span>
+
+                  <span class="project-detail-value">
+                    Identity · Access Control · Least Privilege
+                  </span>
+                </div>
+
+                <a href="#" class="button" target="_blank" rel="noopener">
+                  GitHub
+                </a>
+
+              </div>
+            </div>
+
+          </article> -->
+
+        <!-- </div> -->
+
+
+        <!-- Planned projects -->
+        <!-- <div class="projects-planned">
+
+          <p class="section-label">PLANNED</p>
+
+          <div class="planned-projects">
+
+            <div class="planned-project">
+              <span class="planned-project-status">PLANNED</span>
+              <span class="planned-project-name">
+                GCP Monitoring &amp; Observability
+              </span>
+              <span class="planned-project-focus">
+                Observability &amp; Cloud Operations
+              </span>
+            </div>
+
+            <div class="planned-project">
+              <span class="planned-project-status">PLANNED</span>
+              <span class="planned-project-name">
+                Microsoft Entra Identity Lab
+              </span>
+              <span class="planned-project-focus">
+                Identity &amp; Access Management
+              </span>
+            </div>
 
           </div>
 
-          <div class="overlay">
-            <h3>Build in Progress</h3>
-            <p>
-              I'm currently building hands-on cloud security projects and labs to
-              strengthen my practical skills in identity, access management,
-              monitoring, and cloud operations.
-            </p>
-          </div>
+        </div> -->
 
-        </div>
-      </div>
+      <!-- </div> -->
     </section>
 
     <section id="blogs" class="section alt-bg">
@@ -395,10 +507,10 @@
 
           <!-- LEFT: Resume introduction -->
           <div class="resume-content">
-            <p class="section-label">PROFESSIONAL PROFILE</p>
 
             <h2>Resume</h2>
-
+            <br>
+            <p class="section-label">PROFESSIONAL PROFILE</p>
             <p class="resume-intro">
               Interested in my professional experience, technical background,
               and cloud-focused engineering journey? Explore my latest resume.
@@ -555,4 +667,5 @@
 
   </main>
 </body>
+
 </html>
