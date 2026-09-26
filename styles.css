@@ -378,9 +378,11 @@ h2 {
    PROJECTS
 ========================== */
 
-/* .projects-list {
+.projects-list {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  align-items: start;
 }
 
 .project-item {
@@ -415,8 +417,26 @@ h2 {
 
 .project-summary-content {
   min-width: 0;
+  flex:1;
   display: grid;
   gap: 0.5rem;
+}
+
+.project-year {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: right;
+}
+
+.project-base {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-meta {
@@ -424,6 +444,8 @@ h2 {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .project-type,
@@ -477,6 +499,15 @@ h2 {
   transform: rotate(180deg);
 }
 
+.project-details-content .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  margin: 2rem auto 0;
+}
+
 .project-details {
   border-top: 1px solid var(--border);
 }
@@ -495,7 +526,7 @@ h2 {
 .project-detail-group {
   display: grid;
   grid-template-columns: 180px minmax(0, 1fr);
-  gap: 1rem;
+  gap: 6.5rem;
   padding-top: 1rem;
   margin-top: 1rem;
   border-top: 1px solid var(--border);
@@ -511,28 +542,29 @@ h2 {
 
 .project-details-content .button {
   margin-top: 1.5rem;
-} */
+}
 
 
 /* ==========================
    PLANNED PROJECTS
 ========================== */
 
-/* .projects-planned {
+.projects-planned {
   margin-top: 3rem;
 }
 
 .planned-projects {
   display: grid;
   gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .planned-project {
-  display: grid;
-  grid-template-columns: 120px minmax(0, 1fr) minmax(0, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 1.1rem 1.25rem;
+  padding: 1.5rem 1.25rem;
   border: 1px solid var(--border);
   border-radius: 0.75rem;
   background: #f8fafc;
@@ -550,7 +582,7 @@ h2 {
 
 .planned-project-focus {
   font-size: 0.9rem;
-} */
+}
 
 /* ==========================
    BLOGS
@@ -1073,7 +1105,6 @@ h2 {
   .cert-grid,
   .overlay-grid,
   .card-grid,
-  .projects-grid,
   .resume-grid,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -1101,7 +1132,14 @@ h2 {
    PROJECTS — MOBILE
 ========================== */
 
-/* .project-summary {
+@media (max-width: 768px) {
+
+  .projects-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-summary {
     gap: 1rem;
     padding: 1.25rem;
   }
@@ -1124,11 +1162,13 @@ h2 {
     gap: 0.35rem;
   }
 
-  .planned-project {
+  .planned-projects {
     grid-template-columns: 1fr;
     gap: 0.35rem;
     padding: 1rem 1.1rem;
-  } */
+  }
+
+}
 
 /* ==========================
    BLOGS (Mobile)

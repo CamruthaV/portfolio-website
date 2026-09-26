@@ -37,16 +37,25 @@ primaryNav.querySelectorAll("a").forEach((link) => {
    PROJECT ACCORDIONS
 ========================== */
 
-// const projectSummaries = document.querySelectorAll(".project-summary");
+const projectSummaries = document.querySelectorAll(".project-summary");
 
-// projectSummaries.forEach((summary) => {
-//   summary.addEventListener("click", () => {
-//     const detailsId = summary.getAttribute("aria-controls");
-//     const details = document.getElementById(detailsId);
+projectSummaries.forEach((summary) => {
+  summary.addEventListener("click", () => {
+    const detailsId = summary.getAttribute("aria-controls");
+    const details = document.getElementById(detailsId);
 
-//     const isExpanded = summary.getAttribute("aria-expanded") === "true";
+    if (!details) {
+      return;
+    }
 
-//     summary.setAttribute("aria-expanded", String(!isExpanded));
-//     details.hidden = isExpanded;
-//   });
-// });
+    const isExpanded =
+      summary.getAttribute("aria-expanded") === "true";
+
+    summary.setAttribute(
+      "aria-expanded",
+      String(!isExpanded)
+    );
+
+    details.hidden = isExpanded;
+  });
+});
