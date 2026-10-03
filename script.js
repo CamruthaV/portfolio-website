@@ -1,4 +1,6 @@
-// Navigation Toggle Functionality
+/* ==========================
+   NAVIGATION TOGGLE
+========================== */
 const navToggle = document.querySelector(".nav-toggle");
 const primaryNav = document.querySelector("#primary-navigation");
 
@@ -59,3 +61,41 @@ projectSummaries.forEach((summary) => {
     details.hidden = isExpanded;
   });
 });
+
+/* ==========================
+   PROJECT ACCORDIONS
+========================== */
+
+const heroVisualFrame = document.querySelector(".hero-visual-frame");
+
+if (heroVisualFrame) {
+  heroVisualFrame.addEventListener("click", () => {
+    const image = heroVisualFrame.querySelector(".hero-visual-image");
+
+    image.classList.remove("is-spinning");
+    void image.offsetWidth;
+    image.classList.add("is-spinning");
+  });
+}
+
+/* ==========================
+   HERO - TAGLINE CODE
+========================== */
+
+const heroCodeText = document.querySelector("#hero-code-text");
+
+if (heroCodeText) {
+  const text = "Security • Cloud • Platforms";
+  let index = 0;
+
+  const typeHeroText = () => {
+    if (index < text.length) {
+      heroCodeText.textContent += text[index];
+      index += 1;
+
+      setTimeout(typeHeroText, 80);
+    }
+  };
+
+  typeHeroText();
+}

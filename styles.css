@@ -184,12 +184,190 @@ h2 {
 }
 
 .lead {
-  max-width: 58ch;
+  max-width: 62ch;
   color: var(--muted);
 }
 
 .alt-bg {
   background: #eef2f7;
+}
+
+/* ==========================
+   HERO LAYOUT
+========================== */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  align-items: center;
+  gap: 5rem;
+}
+
+.hero-content {
+  min-width: 0;
+  max-width: 760px;
+}
+
+.hero-content h1 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .hero-visual {
+    position: relative;
+    left: 3rem;
+  }
+}
+
+.hero-tagline {
+  max-width: 62ch;
+}
+
+.hero-visual-frame {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #eef2ff;
+  border: 1px solid var(--border);
+}
+
+.hero-visual-image {
+  display: block;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.hero-code-tagline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: 100%;
+  margin: 1rem 0 0;
+  padding: 2rem 0.9rem 0.7rem;
+  border: 1px solid #374151;
+  border-radius: 0.45rem;
+  background: #111827;
+  color: #d1d5db;
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+
+.hero-code-tagline::before {
+  content: "TERMINAL";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0.35rem 0.75rem 0.35rem 3rem;
+  border-bottom: 1px solid #374151;
+  color: #9ca3af;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.hero-code-tagline::after {
+  content: "";
+  position: absolute;
+  top: 0.62rem;
+  left: 0.75rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #f87171;
+  box-shadow: 0.75rem 0 #fbbf24, 1.5rem 0 #34d399;
+}
+
+.hero-code-prompt,
+.hero-code-cursor {
+  color: var(--primary);
+}
+.hero-code-prompt {
+  color: var(--primary);
+}
+
+.hero-code-cursor {
+  color: var(--primary);
+  margin-left: 0.1rem;
+  animation: hero-cursor-blink 0.9s steps(1) infinite;
+}
+
+@keyframes hero-cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-visual-frame {
+  width: min(380px, 100%);
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #eef2ff;
+  border: 1px solid var(--border);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-visual-image {
+  display: block;
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Variant 1 — flat logo coin flip */
+
+.hero-visual-frame {
+  perspective: 1000px;
+}
+
+.hero-visual-image {
+  display: block;
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.hero-visual-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.10);
+}
+
+.hero-visual-frame:hover .hero-visual-image {
+  transform: rotateY(360deg) scale(1.02);
 }
 
 /* ==========================
@@ -1125,6 +1303,85 @@ h2 {
 
   .section {
     padding: 3rem 0;
+  }
+}
+
+/* ==========================
+   HERO — MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hero-content {
+    display: contents;
+  }
+
+  .hero-content h1 {
+    grid-row: 1;
+  }
+
+  .hero-visual {
+    grid-row: 2;
+    align-items: center;
+  }
+
+  .hero-content .hero-tagline {
+    grid-row: 3;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-content .lead {
+    grid-row: 4;
+    margin-top: 0.25rem;
+  }
+
+  .hero-content .hero-actions {
+    grid-row: 5;
+  }
+
+  .hero-visual-frame {
+    width: min(320px, 85vw);
+  }
+
+  .hero-visual-image {
+    width: 84%;
+    height: 84%;
+  }
+
+  .hero-code-tagline {
+    text-align: center;
+    white-space: normal;
+    font-size: 0.75rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-visual-image.is-spinning {
+  animation: hero-coin-spin 0.8s ease;
+  }
+}
+
+@keyframes hero-coin-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
   }
 }
 
