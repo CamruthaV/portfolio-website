@@ -1,30 +1,42 @@
 # 🌐 Portfolio Website
 
-A personal portfolio documenting my journey from Software Engineer towards **Platform Engineering**, with a specialization in **Cloud Security** and modern cloud technologies.
+A personal portfolio documenting my journey as a Software Engineer towards **Platform Engineering**, with a specialization in **Cloud Security** and modern cloud technologies.
 
-> This repository is actively developed as an engineering project, with iterative releases, versioning, issue tracking, and continuous improvements.
+> This repository is maintained as an engineering project, with versioning, issue tracking, iterative improvements, and documented releases.
 
 ---
 
 ## 🚀 Live Website
 
-🔗 [Portfolio](https://camruthav.github.io/portfolio-website/#home)
+🔗 [View Portfolio](https://camruthav.github.io/portfolio-website/#home)
 
 ---
 
 ## 👩‍💻 About the Project
 
-This portfolio is built as an evolving engineering project. Each release introduces new features, design improvements, and technical refinements while documenting my growth in Platform Engineering and Cloud Security.
+This portfolio is an evolving representation of my professional experience, technical interests, and engineering journey.
 
-It showcases my:
+It brings together:
 
 - Professional certifications
-- Technical blogs
+- Technical blogs and learning resources
 - Cloud and Platform Engineering projects
-- Learning journey
-- Technical growth over time
+- Professional background and resume
+- Contact information and professional links
 
-Rather than being a one-time portfolio, this project evolves alongside my career.
+The website has been developed incrementally, with attention to responsive layouts, visual consistency, usability, and maintainable code. It serves both as a professional portfolio and as a practical project through which I continue to develop my engineering skills.
+
+---
+
+## ✨ Features
+
+- **Responsive layout:** Adapts the portfolio to mobile and desktop screens, with dedicated mobile navigation.
+- **Light and dark themes:** Supports both visual themes.
+- **Professional profile:** Presents my background, interests, and career direction.
+- **Certifications and technical writing:** Highlights completed certifications and published technical content.
+- **Project showcase:** Organises engineering projects and their details into interactive project cards.
+- **Resume and contact:** Provides access to my resume and professional contact links.
+- **Consistent visual system:** Uses shared typography, colours, and interface styling across the website.
 
 ---
 
@@ -33,90 +45,71 @@ Rather than being a one-time portfolio, this project evolves alongside my career
 - HTML5
 - CSS3
 - JavaScript
-- Git & GitHub
+- Git and GitHub
 - GitHub Pages
 
----
-
-## 📈 Current Status
-
-**Current Development Version**
-
-🚧 **v1.2**
-
-Current focus:
-
-- Design System
-- Typography
-- Brand Identity
-- Mobile Experience
-- Visual Refresh
+The portfolio currently uses a lightweight, browser-native stack. A framework migration is not required for the current release.
 
 ---
 
-## 🗺️ Roadmap
+## 📦 Release Status
 
-| Version | Status |
-|----------|--------|
-| v1.0 | ✅ Initial Release |
-| v1.1 | ✅ Responsive Layout & Content |
-| v1.2 | 🚧 Design System & Visual Refresh |
-| v1.3 | ⏳ Dark Mode & Expanded Project Portfolio |
+**Current Release: V1.0**
+
+V1 consolidates the original portfolio development milestones into one complete release. Features initially planned across earlier iterations—including responsive behaviour, visual refinements, and dark mode—were incorporated into the release rather than treated as separate future deliverables.
+
+The focus now shifts from initial development to final documentation, code cleanup, and incremental maintenance.
+
+See [CHANGELOG.md](CHANGELOG.md) for release details.
+
+---
+
+## 🗺️ Future Enhancements
+
+Potential improvements beyond V1 include:
+
+- Further tablet and intermediate-screen refinements
+- Accessibility improvements
+- Performance optimisations
+- Additional technical blogs and engineering projects
+- Minor interface and usability refinements
+- A possible React-based iteration when the portfolio's requirements justify a framework migration
+
+These enhancements will be prioritised as needed rather than treated as prerequisites for the current release.
 
 ---
 
 ## 📋 Project Management
 
-Development is managed using GitHub:
+Development is managed using GitHub, with work organised through:
 
-- Issues
-- Sub-Issues
-- Project Boards
+- Issues and sub-issues
+- Project boards
 - Milestones
-- Releases
+- Version control and releases
 
-This repository follows an iterative development process, where each release builds upon the previous version.
+This workflow supports incremental development, traceable changes, and documented progress.
 
 ---
 
 ## 📚 Repository Structure
 
-```
+```text
 portfolio-website/
-
 ├── assets/
 ├── index.html
 ├── resume.html
 ├── styles.css
 ├── README.md
-├── CHANGELOG.md
+└── CHANGELOG.md
 ```
-
----
-
-## 🌱 Future Enhancements
-
-Planned future improvements include:
-
-- Dark Mode
-- Expanded Project Showcase
-- Additional Technical Blogs
-- Improved Accessibility
-- Performance Optimizations
-- Interactive UI Components
 
 ---
 
 ## 🤝 Feedback
 
-Suggestions, ideas, and constructive feedback are always welcome as this portfolio continues to evolve.
+Suggestions, ideas, and constructive feedback are welcome as I continue to develop my engineering skills and improve the portfolio.
 
 ---
 
 *Built with curiosity, continuous learning, and a passion for engineering.*
-<!--
----
-
- ## 📜 License
-
-This project is released under the MIT License. -->
