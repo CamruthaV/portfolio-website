@@ -99,3 +99,54 @@ if (heroCodeText) {
 
   typeHeroText();
 }
+
+/* ==========================
+   THEME TOGGLE
+========================== */
+const themeToggle = document.querySelector(".theme-toggle");
+
+const storedTheme = localStorage.getItem("theme");
+const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const initialTheme = storedTheme || (systemPrefersDark ? "dark" : "light");
+
+document.documentElement.dataset.theme = initialTheme;
+
+const themeAwareLogos = document.querySelectorAll("[data-light-src][data-dark-src]");
+
+const updateThemeLogos = (theme) => {
+  themeAwareLogos.forEach((logo) => {
+    const source =
+      theme === "dark"
+        ? logo.dataset.darkSrc
+        : logo.dataset.lightSrc;
+
+    if (source) {
+      logo.src = source;
+    }
+  });
+};
+
+const updateThemeToggle = (theme) => {
+  const isDark = theme === "dark";
+  const icon = themeToggle.querySelector("i");
+
+  themeToggle.setAttribute("aria-pressed", String(isDark));
+  themeToggle.setAttribute(
+    "aria-label",
+    isDark ? "Switch to light mode" : "Switch to dark mode"
+  );
+  icon.className = isDark ? "ti ti-sun" : "ti ti-moon";
+};
+
+updateThemeLogos(initialTheme);
+updateThemeToggle(initialTheme);
+
+themeToggle.addEventListener("click", () => {
+  const nextTheme =
+    document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+
+  document.documentElement.dataset.theme = nextTheme;
+  localStorage.setItem("theme", nextTheme);
+  updateThemeLogos(nextTheme);
+  updateThemeToggle(nextTheme);
+});

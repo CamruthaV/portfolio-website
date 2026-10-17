@@ -13,10 +13,21 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrapper">
-      <a class="brand" href="#home" aria-label="Home">
-        <img src="./assets/icons/logo-nobg.png" alt="" />
-        <span class="tagline">Security • Cloud • Platforms</span>
-      </a>
+      <div class="header-brand-group">
+        <a class="brand" href="#home" aria-label="Home">
+          <img
+            src="./assets/icons/logo-light.png"
+            data-light-src="./assets/icons/logo-light.png"
+            data-dark-src="./assets/icons/logo-dark.png"
+            alt=""
+          />
+          <span class="tagline">Security • Cloud • Platforms</span>
+        </a>
+
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <i class="ti ti-moon" aria-hidden="true"></i>
+        </button>
+      </div>
 
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
         aria-controls="primary-navigation">
@@ -25,7 +36,7 @@
 
 
       <nav aria-label="Primary navigation" id="primary-navigation">
-        <ul class="nav-list">
+        <ul class="nav-list text">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#certifications">Certifications</a></li>
@@ -66,7 +77,13 @@
 
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-visual-frame">
-            <img src="./assets/icons/logo-nobg.png" alt="" class="hero-visual-image" />
+            <img
+              src="./assets/icons/logo-light.png"
+              data-light-src="./assets/icons/logo-light.png"
+              data-dark-src="./assets/icons/logo-dark.png"
+              alt=""
+              class="hero-visual-image"
+            />
           </div>
 
           <p class="hero-code-tagline">
@@ -207,22 +224,22 @@
         <div class="cert-grid">
           <!-- change certification-card to cert-card when there's content to change and fill -->
 
-          <article class="card certification-card">
+          <article class="card certification-card planned">
             <h4>Google Cloud Generative AI Leader</h4>
             <p>Generative AI Concepts and Business Applications</p>
           </article>
 
-          <article class="card certification-card">
+          <article class="card certification-card planned">
             <h4>Microsoft AZ-700</h4>
             <p>Azure Network Engineer Associate</p>
           </article>
 
-          <article class="card certification-card">
+          <article class="card certification-card planned">
             <h4>Microsoft SC-500</h4>
             <p>Cloud and AI Security Engineer Associate</p>
           </article>
 
-          <article class="card certification-card">
+          <article class="card certification-card planned">
             <h4>Microsoft AI-103</h4>
             <p>Azure AI Apps and Agents Developer Associate</p>
           </article>
@@ -407,7 +424,7 @@
         <!-- Planned projects -->
         <div class="projects-planned">
 
-          <p class="section-label">PLANNED</p>
+          <h3>Planned Projects</h3>
 
           <div class="planned-projects">
 
