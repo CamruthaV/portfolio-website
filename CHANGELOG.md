@@ -4,6 +4,8 @@ All notable changes to this project are documented in this file.
 
 This project follows an iterative release model, with each release building upon the previous version.
 
+For a more detailed commit history, refer [Commits](https://github.com/CamruthaV/portfolio-website/commits/main/).
+
 ---
 
 # [v1.2.0] - October 2026
