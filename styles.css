@@ -1345,6 +1345,42 @@ h2 {
 }
 
 /* ==========================
+   FOOTER
+========================== */
+
+.site-footer {
+  background: var(--header-bg);
+  color: var(--header-text);
+  border-top: 1px solid var(--header-border);
+}
+
+.site-footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.25rem;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.site-footer a {
+  color: var(--header-text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: var(--secondary);
+}
+
+/* ==========================
    MOBILE
 ========================== */
 
@@ -1823,5 +1859,12 @@ h2 {
   .blog-action.button {
     width: calc(100% - 2rem);
     text-align: center;
+  }
+
+  .site-footer-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-block: 1rem;
   }
 }
