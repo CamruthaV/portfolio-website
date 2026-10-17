@@ -18,6 +18,21 @@ navToggle.addEventListener("click", () => {
     : "ti ti-menu-2";
 });
 
+document.addEventListener("pointerdown", (event) => {
+  if (
+    !primaryNav.classList.contains("is-open") ||
+    primaryNav.contains(event.target) ||
+    navToggle.contains(event.target)
+  ) {
+    return;
+  }
+
+  primaryNav.classList.remove("is-open");
+  navToggle.setAttribute("aria-expanded", "false");
+  navToggle.setAttribute("aria-label", "Open navigation");
+  navToggle.querySelector("i").className = "ti ti-menu-2";
+});
+
 primaryNav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     link.classList.add("is-pressed");
