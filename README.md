@@ -54,13 +54,14 @@ The portfolio currently uses a lightweight, browser-native stack. A framework mi
 
 ## 📦 Release Status
 
-**Current Release: V1.0**
+**Current Release: V1.2.0**
 
-V1 consolidates the original portfolio development milestones into one complete release. Features initially planned across earlier iterations—including responsive behaviour, visual refinements, and dark mode—were incorporated into the release rather than treated as separate future deliverables.
+V1.2 consolidates the original portfolio development milestones into one complete release. Features initially planned across earlier iterations—including responsive behaviour, visual refinements, and dark mode—were incorporated into the release rather than treated as separate future deliverables.
 
 The focus now shifts from initial development to final documentation, code cleanup, and incremental maintenance.
 
-See [CHANGELOG.md](CHANGELOG.md) for release details.
+See [CHANGELOG.md](CHANGELOG.md) for release details. <br>
+See [Commit History](https://github.com/CamruthaV/portfolio-website/commits/main/) for iterative release flow.
 
 ---
 
